@@ -184,6 +184,8 @@ const (
 	NBGV SegmentType = "nbgv"
 	// NIGHTSCOUT is an open source diabetes system
 	NIGHTSCOUT SegmentType = "nightscout"
+	// NIX write the nix shell purity
+	NIX SegmentType = "nix"
 	// NODE writes which node version is currently active
 	NODE SegmentType = "node"
 	// npm version
@@ -325,6 +327,7 @@ var Segments = map[SegmentType]func() SegmentWriter{
 	NBA:             func() SegmentWriter { return &segments.Nba{} },
 	NBGV:            func() SegmentWriter { return &segments.Nbgv{} },
 	NIGHTSCOUT:      func() SegmentWriter { return &segments.Nightscout{} },
+	NIX:             func() SegmentWriter { return &segments.Nix{} },
 	NODE:            func() SegmentWriter { return &segments.Node{} },
 	NPM:             func() SegmentWriter { return &segments.Npm{} },
 	NX:              func() SegmentWriter { return &segments.Nx{} },

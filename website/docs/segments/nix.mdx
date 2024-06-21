@@ -1,0 +1,39 @@
+---
+id: nix
+title: Nix
+sidebar_label: Nix
+---
+
+## What
+
+Show currently active nix-shell purity.
+
+## Sample Configuration
+
+import Config from '@site/src/components/Config.js';
+
+<Config data={{
+  "type": "nix",
+  "style": "plain",
+  "foreground": "#007ACC",
+  "template": "\uf313 {{ .Purity }} "
+
+}}/>
+
+## Template ([info][templates])
+
+:::note default template
+
+```template
+{{ .Purity }}
+```
+
+:::
+
+### Properties
+
+| Name           | Type     | Description                             |
+| -------------- | -------- | --------------------------------------- |
+| `.Purity`      | `string` | Text returned from `$IN_NIX_SHELL`      |
+
+[templates]: /docs/configuration/templates

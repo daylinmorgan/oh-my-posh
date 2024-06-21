@@ -344,6 +344,7 @@
             "mercurial",
             "nbgv",
             "nightscout",
+            "nix",
             "node",
             "npm",
             "nx",
@@ -526,6 +527,17 @@
                 }
               }
             }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": { "const": "nix" }
+            }
+          },
+          "then": {
+            "title": "Nix Segment",
+            "description": "https://ohmyposh.dev/docs/segments/nix",
           }
         },
         {

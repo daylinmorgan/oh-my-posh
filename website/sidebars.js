@@ -95,6 +95,7 @@ module.exports = {
         "segments/mercurial",
         "segments/nbgv",
         "segments/nightscout",
+        "segments/nix",
         "segments/node",
         "segments/npm",
         "segments/nx",
